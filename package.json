@@ -1,0 +1,74 @@
+{
+  "name": "dhos-scoring-engine",
+  "version": "1.1.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "yarn eslint --quiet ./src ./tests",
+    "test": "cross-env NODE_ENV=jest jest"
+  },
+  "engines": {
+    "node": ">=11.0.0"
+  },
+  "contributors": [
+    {
+      "name": "Arsam Sarabi",
+      "email": "arsamsarabi@me.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:draysontechnologies/dhos-scoring-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/draysontechnologies/dhos-scoring-engine.git/issues"
+  },
+  "homepage": "https://github.com/draysontechnologies/dhos-scoring-engine.git#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/glob": "^7.1.1",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.12.14",
+    "@types/supertest": "^2.0.8",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.5",
+    "chalk": "^2.4.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.7.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.1.0",
+    "jest-resolve": "^24.9.0",
+    "ncp": "^2.0.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^2.6.3",
+    "supertest": "^3.4.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "yarn": "^1.13.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "dayjs": "^1.8.8",
+    "json-rules-engine": "^5.0.3",
+    "winston": "^3.2.1"
+  }
+}

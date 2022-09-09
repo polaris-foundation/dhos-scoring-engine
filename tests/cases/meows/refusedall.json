@@ -1,0 +1,102 @@
+[
+  {
+    "id": "refused1",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 12,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 0.5,
+        "high_severity_interval_hours": 0.5
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 0,
+      "oxygen_saturation_score": 0,
+      "systolic_blood_pressure_score": 0,
+      "diastolic_blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "routine_monitoring",
+      "overall_score": 0,
+      "overall_severity": "low",
+      "overall_score_display": "--",
+      "partial_set": true,
+      "empty_set": true,
+      "time_next_obs_set_due": "2018-01-01T12:00:00.000Z",
+      "ranking": "000001,998485235200000",
+      "obx_reference_range": "0",
+      "obx_abnormal_flags": "N"
+    }
+  },
+  {
+    "id": "refused2",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "unknown_obs": 16,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 12,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 0.5,
+        "high_severity_interval_hours": 0.5
+      }
+    },
+    "error": 200,
+    "expected": {
+      "respiratory_rate_score": 0,
+      "oxygen_saturation_score": 0,
+      "systolic_blood_pressure_score": 0,
+      "diastolic_blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "routine_monitoring",
+      "overall_score": 0,
+      "overall_severity": "low",
+      "overall_score_display": "--",
+      "partial_set": true,
+      "empty_set": true,
+      "time_next_obs_set_due": "2018-01-01T12:00:00.000Z",
+      "ranking": "000001,998485235200000",
+      "obx_reference_range": "0",
+      "obx_abnormal_flags": "N"
+    }
+  },
+  {
+    "id": "refused3",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "nurse_concern": "",
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 12,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 0.5,
+        "high_severity_interval_hours": 0.5
+      }
+    },
+    "error": 200,
+    "expected": {
+      "respiratory_rate_score": 0,
+      "oxygen_saturation_score": 0,
+      "systolic_blood_pressure_score": 0,
+      "diastolic_blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "routine_monitoring",
+      "overall_score": 0,
+      "overall_severity": "low",
+      "overall_score_display": "--",
+      "partial_set": true,
+      "empty_set": true,
+      "time_next_obs_set_due": "2018-01-01T12:00:00.000Z",
+      "ranking": "000001,998485235200000",
+      "obx_reference_range": "0",
+      "obx_abnormal_flags": "N"
+    }
+  }
+]

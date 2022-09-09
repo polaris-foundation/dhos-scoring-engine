@@ -1,0 +1,2162 @@
+[
+    {
+        "id": "threshold1",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold2",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold3",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold4",
+        "data": {
+            "blood_glucose_value": 7.7,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold5",
+        "data": {
+            "blood_glucose_value": 7.8,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold6",
+        "data": {
+            "blood_glucose_value": 7.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold7",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold8",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold9",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold10",
+        "data": {
+            "blood_glucose_value": 7.7,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold11",
+        "data": {
+            "blood_glucose_value": 7.8,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold12",
+        "data": {
+            "blood_glucose_value": 7.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold13",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold14",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold15",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold16",
+        "data": {
+            "blood_glucose_value": 7.7,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold17",
+        "data": {
+            "blood_glucose_value": 7.8,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold18",
+        "data": {
+            "blood_glucose_value": 7.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold19",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold20",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold21",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold22",
+        "data": {
+            "blood_glucose_value": 5.2,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold23",
+        "data": {
+            "blood_glucose_value": 5.3,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold24",
+        "data": {
+            "blood_glucose_value": 5.4,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold25",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold26",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold27",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold28",
+        "data": {
+            "blood_glucose_value": 5.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold29",
+        "data": {
+            "blood_glucose_value": 6.0,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold30",
+        "data": {
+            "blood_glucose_value": 6.1,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold31",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold32",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold33",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold34",
+        "data": {
+            "blood_glucose_value": 5.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold35",
+        "data": {
+            "blood_glucose_value": 6.0,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold36",
+        "data": {
+            "blood_glucose_value": 6.1,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "AFTER-BREAKFAST": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-LUNCH": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-LUNCH": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "BEFORE-DINNER": {
+                    "high": 6.0,
+                    "low": 4.0
+                },
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold37",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold38",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold39",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold40",
+        "data": {
+            "blood_glucose_value": 7.7,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold41",
+        "data": {
+            "blood_glucose_value": 7.8,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold42",
+        "data": {
+            "blood_glucose_value": 7.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold43",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold44",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold45",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold46",
+        "data": {
+            "blood_glucose_value": 7.7,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold47",
+        "data": {
+            "blood_glucose_value": 7.8,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold48",
+        "data": {
+            "blood_glucose_value": 7.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold49",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold50",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold51",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold52",
+        "data": {
+            "blood_glucose_value": 7.7,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold53",
+        "data": {
+            "blood_glucose_value": 7.8,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold54",
+        "data": {
+            "blood_glucose_value": 7.9,
+            "prandial_tag_id": "PRANDIAL-TAG-AFTER-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold55",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold56",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold57",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold58",
+        "data": {
+            "blood_glucose_value": 7.7,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold59",
+        "data": {
+            "blood_glucose_value": 7.8,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold60",
+        "data": {
+            "blood_glucose_value": 7.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-BREAKFAST",
+            "blood_glucose_thresholds_mmoll": {
+                "AFTER-DINNER": {
+                    "high": 7.8,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold61",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold62",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold63",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold64",
+        "data": {
+            "blood_glucose_value": 7.7,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold65",
+        "data": {
+            "blood_glucose_value": 7.8,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold66",
+        "data": {
+            "blood_glucose_value": 7.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-DINNER",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold67",
+        "data": {
+            "blood_glucose_value": 3.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-LOW"
+        }
+    },
+    {
+        "id": "threshold68",
+        "data": {
+            "blood_glucose_value": 4.0,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold69",
+        "data": {
+            "blood_glucose_value": 4.1,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold70",
+        "data": {
+            "blood_glucose_value": 7.7,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-NORMAL"
+        }
+    },
+    {
+        "id": "threshold71",
+        "data": {
+            "blood_glucose_value": 7.8,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    },
+    {
+        "id": "threshold72",
+        "data": {
+            "blood_glucose_value": 7.9,
+            "prandial_tag_id": "PRANDIAL-TAG-BEFORE-LUNCH",
+            "blood_glucose_thresholds_mmoll": {
+                "BEFORE-BREAKFAST": {
+                    "high": 5.3,
+                    "low": 4.0
+                },
+                "OTHER": {
+                    "high": 7.8,
+                    "low": 4.0
+                }
+            }
+        },
+        "expected": {
+            "banding_id": "BG-READING-BANDING-HIGH"
+        }
+    }
+]

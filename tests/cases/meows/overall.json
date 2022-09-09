@@ -1,0 +1,122 @@
+[
+  {
+    "id": "overall1",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 18,
+      "heart_rate": 115,
+      "oxygen_saturation": 95,
+      "systolic_blood_pressure": 220,
+      "diastolic_blood_pressure": 100,
+      "consciousness_acvpu": "alert",
+      "temperature": 35.4,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 0.5,
+        "high_severity_interval_hours": 0.5
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 0,
+      "oxygen_saturation_score": 2,
+      "systolic_blood_pressure_score": 8,
+      "diastolic_blood_pressure_score": 0,
+      "heart_rate_score": 2,
+      "consciousness_score": 0,
+      "temperature_score": 2,
+      "monitoring_instruction": "high_monitoring",
+      "overall_score": 14,
+      "overall_severity": "high",
+      "overall_score_display": "14",
+      "partial_set": false,
+      "time_next_obs_set_due": "2018-01-01T00:30:00.000Z",
+      "ranking": "041400,998485235200000",
+      "obx_reference_range": "0",
+      "obx_abnormal_flags": "EXTHIGH"
+    }
+  },
+  {
+    "id": "overall2",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 25,
+      "heart_rate": 131,
+      "oxygen_saturation": 97,
+      "spo2_scale": 2,
+      "o2_therapy": 2,
+      "o2_therapy_mask": "Venturi",
+      "systolic_blood_pressure": 220,
+      "diastolic_blood_pressure": 111,
+      "consciousness_acvpu": "pain",
+      "temperature": 39.1,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 0.5,
+        "high_severity_interval_hours": 0.5
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 2,
+      "oxygen_saturation_score": 0,
+      "systolic_blood_pressure_score": 8,
+      "diastolic_blood_pressure_score": 8,
+      "heart_rate_score": 8,
+      "consciousness_score": 8,
+      "temperature_score": 8,
+      "monitoring_instruction": "high_monitoring",
+      "overall_score": 42,
+      "overall_severity": "high",
+      "overall_score_display": "42",
+      "partial_set": false,
+      "time_next_obs_set_due": "2018-01-01T00:30:00.000Z",
+      "ranking": "044200,998485235200000",
+      "obx_reference_range": "0",
+      "obx_abnormal_flags": "EXTHIGH"
+    }
+  },
+  {
+    "id": "overall3",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 25,
+      "heart_rate": 120,
+      "oxygen_saturation": 97,
+      "spo2_scale": 2,
+      "o2_therapy": 2,
+      "o2_therapy_mask": "Venturi",
+      "systolic_blood_pressure": 120,
+      "diastolic_blood_pressure": 60,
+      "consciousness_acvpu": "a",
+      "temperature": 37.0,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 0.5,
+        "high_severity_interval_hours": 0.5
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 2,
+      "oxygen_saturation_score": 0,
+      "systolic_blood_pressure_score": 0,
+      "diastolic_blood_pressure_score": 0,
+      "heart_rate_score": 2,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "medium_monitoring",
+      "overall_score": 4,
+      "overall_severity": "medium",
+      "overall_score_display": "4",
+      "partial_set": false,
+      "time_next_obs_set_due": "2018-01-01T00:30:00.000Z",
+      "ranking": "030400,998485235200000",
+      "obx_reference_range": "0",
+      "obx_abnormal_flags": "HIGH"
+    }
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "resprate1",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 0,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 3,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "low_medium_monitoring",
+      "overall_score": 3,
+      "overall_severity": "low-medium",
+      "overall_score_display": "3",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T01:00:00.000Z",
+      "ranking": "020310,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "HIGH"
+    }
+  },
+  {
+    "id": "resprate2",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 8,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 3,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "low_medium_monitoring",
+      "overall_score": 3,
+      "overall_severity": "low-medium",
+      "overall_score_display": "3",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T01:00:00.000Z",
+      "ranking": "020310,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "HIGH"
+    }
+  },
+  {
+    "id": "resprate3",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 9,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 1,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "low_monitoring",
+      "overall_score": 1,
+      "overall_severity": "low",
+      "overall_score_display": "1",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T06:00:00.000Z",
+      "ranking": "010110,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "N"
+    }
+  },
+  {
+    "id": "resprate4",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 11,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 1,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "low_monitoring",
+      "overall_score": 1,
+      "overall_severity": "low",
+      "overall_score_display": "1",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T06:00:00.000Z",
+      "ranking": "010110,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "N"
+    }
+  },
+  {
+    "id": "resprate5",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 12,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 0,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "routine_monitoring",
+      "overall_score": 0,
+      "overall_severity": "low",
+      "overall_score_display": "0",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T12:00:00.000Z",
+      "ranking": "000010,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "N"
+    }
+  },
+  {
+    "id": "resprate6",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 20,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 0,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "routine_monitoring",
+      "overall_score": 0,
+      "overall_severity": "low",
+      "overall_score_display": "0",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T12:00:00.000Z",
+      "ranking": "000010,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "N"
+    }
+  },
+  {
+    "id": "resprate7",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 21,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 2,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "low_monitoring",
+      "overall_score": 2,
+      "overall_severity": "low",
+      "overall_score_display": "2",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T06:00:00.000Z",
+      "ranking": "010210,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "N"
+    }
+  },
+  {
+    "id": "resprate8",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 24,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 2,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "low_monitoring",
+      "overall_score": 2,
+      "overall_severity": "low",
+      "overall_score_display": "2",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T06:00:00.000Z",
+      "ranking": "010210,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "N"
+    }
+  },
+  {
+    "id": "resprate9",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 25,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 3,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "low_medium_monitoring",
+      "overall_score": 3,
+      "overall_severity": "low-medium",
+      "overall_score_display": "3",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T01:00:00.000Z",
+      "ranking": "020310,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "HIGH"
+    }
+  },
+  {
+    "id": "resprate10",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 999,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 3,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "low_medium_monitoring",
+      "overall_score": 3,
+      "overall_severity": "low-medium",
+      "overall_score_display": "3",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T01:00:00.000Z",
+      "ranking": "020310,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "HIGH"
+    }
+  }
+]

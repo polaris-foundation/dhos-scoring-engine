@@ -1,0 +1,100 @@
+[
+  {
+    "id": "nurseconcern1",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "nurse_concern": "Self harm",
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0.5
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 0,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 0,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "high_monitoring",
+      "overall_score": 0,
+      "overall_severity": "high",
+      "overall_score_display": "0C",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T00:30:00.000Z",
+      "ranking": "140010,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "N"
+    }
+  },
+  {
+    "id": "nurseconcern2",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "systolic_blood_pressure": 90,
+      "nurse_concern": "Self harm",
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 0,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 3,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "high_monitoring",
+      "overall_score": 3,
+      "overall_severity": "high",
+      "overall_score_display": "3C",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T00:00:00.000Z",
+      "ranking": "140310,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "HIGH"
+    }
+  },
+  {
+    "id": "nurseconcern3",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "nurse_concern": "",
+      "systolic_blood_pressure": 91,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "expected": {
+      "respiratory_rate_score": 0,
+      "oxygen_saturation_score": 0,
+      "o2_therapy_score": 0,
+      "blood_pressure_score": 2,
+      "heart_rate_score": 0,
+      "consciousness_score": 0,
+      "temperature_score": 0,
+      "monitoring_instruction": "low_monitoring",
+      "overall_score": 2,
+      "overall_severity": "low",
+      "overall_score_display": "2",
+      "partial_set": true,
+      "time_next_obs_set_due": "2018-01-01T06:00:00.000Z",
+      "ranking": "010210,998485235200000",
+      "obx_reference_range": "0-4",
+      "obx_abnormal_flags": "N"
+    }
+  }
+]

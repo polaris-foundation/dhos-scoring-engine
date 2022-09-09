@@ -1,0 +1,164 @@
+[
+  {
+    "id": "th1",
+    "blood_glucose_thresholds": {
+      "BEFORE-BREAKFAST": {
+        "high": 5.3, "low": 4.0
+      },
+      "AFTER-BREAKFAST": {
+        "high": 7.8, "low": 4.0
+      },
+      "BEFORE-LUNCH": {
+        "high": 6.0, "low": 4.0
+      },
+      "AFTER-LUNCH": {
+        "high": 7.8, "low": 4.0
+      },
+      "BEFORE-DINNER": {
+        "high": 6.0, "low": 4.0
+      },
+      "AFTER-DINNER": {
+        "high": 7.8, "low": 4.0
+      },
+      "OTHER": {
+        "high": 7.8, "low": 4.0
+      }
+    },
+    "expected": [
+      {
+        "conditions": {
+          "all": [
+            {
+              "fact": "bloodGlucoseValue",
+              "operator": "greaterThanInclusive",
+              "value": 0
+            },
+            {
+              "fact": "bloodGlucoseValue",
+              "operator": "lessThan",
+              "value": 4.0
+            }
+          ]
+        },
+        "event": {
+          "type": "bloodGlucoseReadingBanding",
+          "params": {
+            "level": "BG-READING-BANDING-LOW"
+          }
+        }
+      },
+      {
+        "conditions": {
+          "any": [
+          {
+            "all": [
+              {
+                "fact": "bloodGlucoseValue",
+                "operator": "greaterThanInclusive",
+                "value": 4.0
+              },
+              {
+                "fact": "bloodGlucoseValue",
+                "operator": "lessThan",
+                "value": 5.3
+              },
+              {
+                "fact": "prandialTagId",
+                "operator": "equal",
+                "value": "PRANDIAL-TAG-BEFORE-BREAKFAST"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "fact": "bloodGlucoseValue",
+                "operator": "greaterThanInclusive",
+                "value": 4.0
+              },
+              {
+                "fact": "bloodGlucoseValue",
+                "operator": "lessThan",
+                "value": 6.0
+              },
+              {
+                "fact": "prandialTagId",
+                "operator": "in",
+                "value": ["PRANDIAL-TAG-BEFORE-LUNCH", "PRANDIAL-TAG-BEFORE-DINNER"]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "fact": "bloodGlucoseValue",
+                "operator": "greaterThanInclusive",
+                "value": 4.0
+              },
+              {
+                "fact": "bloodGlucoseValue",
+                "operator": "lessThan",
+                "value": 7.8
+              },
+              {
+                "fact": "prandialTagId",
+                "operator": "notIn",
+                "value": ["PRANDIAL-TAG-BEFORE-BREAKFAST", "PRANDIAL-TAG-BEFORE-LUNCH", "PRANDIAL-TAG-BEFORE-DINNER"]
+              }
+            ]
+          }
+        ]
+        },
+        "event": {
+          "type": "bloodGlucoseReadingBanding",
+          "params": {
+            "level": "BG-READING-BANDING-NORMAL"
+          }
+        }
+      },
+      {
+        "conditions": {
+          "any": [
+          {
+            "all": [
+              {
+                "fact": "bloodGlucoseValue",
+                "operator": "greaterThanInclusive",
+                "value": 5.3
+              },
+              {
+                "fact": "prandialTagId",
+                "operator": "equal",
+                "value": "PRANDIAL-TAG-BEFORE-BREAKFAST"
+              }
+            ]
+          }, {
+            "all": [
+              {
+                "fact": "bloodGlucoseValue",
+                "operator": "greaterThanInclusive",
+                "value": 6.0
+              },
+              {
+                "fact": "prandialTagId",
+                "operator": "in",
+                "value": ["PRANDIAL-TAG-BEFORE-LUNCH", "PRANDIAL-TAG-BEFORE-DINNER"]
+              }
+            ]
+          }, {
+            "fact": "bloodGlucoseValue",
+            "operator": "greaterThanInclusive",
+            "value": 7.8
+          }
+        ]
+        },
+        "event": {
+          "type": "bloodGlucoseReadingBanding",
+          "params": {
+            "level": "BG-READING-BANDING-HIGH"
+          }
+        }
+      }
+    ]
+  }
+]

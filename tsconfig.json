@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "allowJs": false,
+
+    // "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "removeComments": true,
+    "strict": true,
+
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "include": ["src/**/*", "./types/*"],
+  "exclude": ["./config", "node_modules", "tests"]
+}

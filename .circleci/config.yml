@@ -1,0 +1,76 @@
+GCP_DOCKER_AUTH_MASTER: &GCP_DOCKER_AUTH
+  auth:
+    username: _json_key
+    password: ${GOOGLE_AUTH}
+
+COVERAGE_PARAMETERS_MASTER: &COVERAGE_PARAMETERS
+  COVERAGE_REPORT_DIR: coverage-reports
+  COVERAGE_REPORT_FILE: lcov.info
+  COVERAGE_TECHNOLOGY: javascript.lcov
+
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/node:11.13.0
+    environment:
+      <<: *COVERAGE_PARAMETERS
+    steps:
+      - checkout
+      - run:
+          name: Create coverage report dir
+          command: mkdir -p ${COVERAGE_REPORT_DIR}
+      - restore_cache:
+          keys:
+            - v1-yarn-deps-{{ checksum "yarn.lock" }}
+            - v1-yarn-deps-
+      - run:
+          name: Set up yarn tests
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          key: v1-yarn-deps-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+      - run:
+          name: Run yarn tests
+          command: yarn test
+      - persist_to_workspace:
+          root: coverage-reports
+          paths:
+            - lcov.info
+
+  deploy-gemfury:
+    docker:
+      - image: circleci/node:11.13.0
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: yarn install --frozen-lockfile
+      - run:
+          name: Build the library
+          command: yarn build
+      - run:
+          name: Upload to gemfury
+          command: .circleci/push_gemfury.sh $(npm pack)
+      - run:
+          name: Create git tag
+          command: git tag v$(node -p "require('./package.json').version")
+      - run:
+          name: Push git tag
+          command: git push --tags
+
+workflows:
+  version: 2
+  build_test_deploy:
+    jobs:
+      - test:
+          context: engineering-build
+      - deploy-gemfury:
+          context: dhos-deploy
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - master

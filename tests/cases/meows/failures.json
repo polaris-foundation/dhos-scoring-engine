@@ -1,0 +1,66 @@
+[
+  {
+    "id": "error1",
+    "data": {
+      "time": "2018-01-01T00:00:00.000Z",
+      "respiratory_rate": 18,
+      "heart_rate": 115,
+      "oxygen_saturation": 95,
+      "spo2_scale": 1,
+      "o2_therapy": 2,
+      "o2_therapy_mask": "undefined",
+      "systolic_blood_pressure": 220,
+      "consciousness_acvpu": "alert",
+      "temperature": 35.4
+    },
+    "error": 400,
+    "expected": "Must include expected config values in body"
+  },
+  {
+    "id": "error2",
+    "data": {
+      "respiratory_rate": 25,
+      "heart_rate": 131,
+      "oxygen_saturation": 97,
+      "spo2_scale": 2,
+      "o2_therapy": 2,
+      "o2_therapy_mask": "Venturi",
+      "systolic_blood_pressure": 220,
+      "consciousness_acvpu": "pain",
+      "temperature": 39.1,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "error": 400,
+    "expected": "Must include a valid ISO8601 timestamp \"time\" in the body"
+  },
+  {
+    "id": "error3",
+    "data": {
+      "time": "notiso18601",
+      "respiratory_rate": 11,
+      "heart_rate": 91,
+      "oxygen_saturation": 95,
+      "spo2_scale": 1,
+      "o2_therapy": 0,
+      "o2_therapy_mask": "Room Air",
+      "systolic_blood_pressure": 110,
+      "consciousness_acvpu": "alert",
+      "temperature": 37.0,
+      "config": {
+        "zero_severity_interval_hours": 12,
+        "low_severity_interval_hours": 6,
+        "low_medium_severity_interval_hours": 1,
+        "medium_severity_interval_hours": 1,
+        "high_severity_interval_hours": 0
+      }
+    },
+    "error": 400,
+    "expected": "Must include a valid ISO8601 timestamp \"time\" in the body"
+  }
+]
