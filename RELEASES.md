@@ -1,5 +1,6 @@
 # 1.1.2
 - Move hosting to npm
+
 # 1.0.0
 - Extract dhos-scoring-engine as a standalone library from dhos-rules-engine
 
