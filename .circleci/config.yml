@@ -3,13 +3,11 @@ jobs:
   test:
     docker:
       - image: circleci/node:11.13.0
-    environment:
-      <<: *COVERAGE_PARAMETERS
     steps:
       - checkout
       - run:
           name: Create coverage report dir
-          command: mkdir -p ${COVERAGE_REPORT_DIR}
+          command: mkdir -p coverage-reports
       - restore_cache:
           keys:
             - v1-yarn-deps-{{ checksum "yarn.lock" }}
