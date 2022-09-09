@@ -31,6 +31,9 @@ jobs:
     docker:
       - image: circleci/node:11.13.0
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "97:cb:22:b1:9e:81:04:e6:03:f8:d0:53:10:85:0b:fa"
       - checkout
       - run:
           name: Install dependencies
