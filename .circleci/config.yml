@@ -1,13 +1,3 @@
-GCP_DOCKER_AUTH_MASTER: &GCP_DOCKER_AUTH
-  auth:
-    username: _json_key
-    password: ${GOOGLE_AUTH}
-
-COVERAGE_PARAMETERS_MASTER: &COVERAGE_PARAMETERS
-  COVERAGE_REPORT_DIR: coverage-reports
-  COVERAGE_REPORT_FILE: lcov.info
-  COVERAGE_TECHNOLOGY: javascript.lcov
-
 version: 2
 jobs:
   test:
@@ -39,7 +29,7 @@ jobs:
           paths:
             - lcov.info
 
-  deploy-gemfury:
+  publish-npm:
     docker:
       - image: circleci/node:11.13.0
     steps:
@@ -51,8 +41,12 @@ jobs:
           name: Build the library
           command: yarn build
       - run:
-          name: Upload to gemfury
-          command: .circleci/push_gemfury.sh $(npm pack)
+          name: Authenticate with npm
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_PUBLISH_TOKEN" > .npmrc
+      - run:
+          name: Publish to npm
+          command: npm publish --access public
+          working_directory: ./draymed_js
       - run:
           name: Create git tag
           command: git tag v$(node -p "require('./package.json').version")
@@ -65,12 +59,12 @@ workflows:
   build_test_deploy:
     jobs:
       - test:
-          context: engineering-build
-      - deploy-gemfury:
-          context: dhos-deploy
+          context: polaris-foundation
+      - publish-npm:
+          context: polaris-foundation
           requires:
             - test
           filters:
             branches:
               only:
-                - master
+                - main

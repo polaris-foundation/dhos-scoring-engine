@@ -16,4 +16,4 @@ yarn test
 
 # Important
 
-The scoring engine is exposed through gemfury as an importable package so that the [dhos-rules-engine](https://github.com/draysontechnologies/dhos-rules-engine), [send-desktop](https://github.com/draysontechnologies/send-desktop) and [send-entry](https://github.com/draysontechnologies/send-entry) all import the same module for scoring. If the dhos-scoring-enine version is updated all of these repositories need to be updated so that the backend and frontend are in sync.
+The scoring engine is exposed through npm as an importable package so that the [polaris-rules-engine](https://github.com/polaris-foundation/polaris-rules-engine) can import the the scoring module.
