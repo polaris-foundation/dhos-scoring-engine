@@ -47,7 +47,6 @@ jobs:
       - run:
           name: Publish to npm
           command: npm publish --access public
-          working_directory: ./draymed_js
       - run:
           name: Create git tag
           command: git tag v$(node -p "require('./package.json').version")
